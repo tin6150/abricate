@@ -25,8 +25,20 @@ file:///G:/Shared%20drives/Tin_Ho_gDrv_BL_shareDrv/mph_hw/mph_prj_bioinfo/ExPEC/
 first record is first record of vfdb/sequence (for now)
 
 
-PLAN
 
+sequence db template
+--------------------
+
+>rjrg~~~GENE_ID~~~GENE_ACC~~RESISTANCES some description here [dummy record]
+CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
+
+
+PLAN
+----
 
 
 eg_ctrl.fa # example/control file
@@ -52,6 +64,15 @@ okay, seems to work as expected.  the poly-A test, change 1 A to C, result in 98
 need seq for yfcV and kpsMII next
 
 
+Notes
+-----
+
+the entry
+    ecoli_vf~~~ycfz~~~SPG000092 putative factor
+is for ycfz, NOT yfcV that ExPEC definition looks for.
+it was a gene copied from ecoli_vf db that Abricate comes with, kind of serve as control.
+
+
 
 References
 ----------
@@ -59,4 +80,10 @@ References
 2016 Chapman : doi:10.1128/AEM.02885-05
 
 2012 Spurbeck :  doi: 10.1128/IAI.00752-12 - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3497434/
+
+
+yfcV: 
+>NP_311249.1 fimbrial-like adhesin protein [Escherichia coli O157:H7 str. Sakai]
+https://www.ncbi.nlm.nih.gov/protein/NP_311249.1?report=fasta 
+https://www.ncbi.nlm.nih.gov/gene/915681
 
