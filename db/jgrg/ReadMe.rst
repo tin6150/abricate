@@ -45,7 +45,18 @@ Test
 
 export PATH=$PATH:/home/tin/tin-gh/abricate/bin/
 abricate -db jgrg ex_ctrl_A1_KCC7_L1.fa | tee jgrg_screen.OUT
+abricate -db jgrg ex_ctrl_*.fa | tee jgrg_screen_test2.OUT
 
 okay, seems to work as expected.  the poly-A test, change 1 A to C, result in 98% match.
 
 need seq for yfcV and kpsMII next
+
+
+
+References
+----------
+
+2016 Chapman : doi:10.1128/AEM.02885-05
+
+2012 Spurbeck :  doi: 10.1128/IAI.00752-12 - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3497434/
+
