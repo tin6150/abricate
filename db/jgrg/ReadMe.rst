@@ -86,4 +86,5 @@ yfcV:
 >NP_311249.1 fimbrial-like adhesin protein [Escherichia coli O157:H7 str. Sakai]
 https://www.ncbi.nlm.nih.gov/protein/NP_311249.1?report=fasta 
 https://www.ncbi.nlm.nih.gov/gene/915681
+but that's protein sequence.  codon dengeracy maybe an issue, but used this reverse translation tool at https://www.biophp.org/minitools/protein_to_dna/demo.php
 
