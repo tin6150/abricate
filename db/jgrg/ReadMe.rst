@@ -16,7 +16,7 @@ Installation
 	git clone https://github.com/tin6150/abricate.git
 	git checkout jgrg 
 
-depencies, please see the original abricate setup for info.
+depencies, please see the original abricate setup for info https://github.com/tseemann/abricate?tab=readme-ov-file#source .
 
 Example usage
 -------------
