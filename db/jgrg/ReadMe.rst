@@ -8,11 +8,13 @@ eg
 - kpsMII (tbd)
 
 
-Install and Use
----------------
+Installation
+------------
 
-git clone https://github.com/tin6150/abricate.git
-git checkout jgrg 
+.. code:: bash
+
+	git clone https://github.com/tin6150/abricate.git
+	git checkout jgrg 
 
 depencies, please see the original abricate setup for info.
 
