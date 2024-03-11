@@ -58,6 +58,8 @@ Test
 export PATH=$PATH:/home/tin/tin-gh/abricate/bin/
 abricate -db jgrg ex_ctrl_A1_KCC7_L1.fa | tee jgrg_screen.OUT
 abricate -db jgrg ex_ctrl_*.fa | tee jgrg_screen_test2.OUT
+abricate -db jgrg A1_CKDN220053871-1A_HKCC7DSX5_L1.fasta/assembly.fasta | tee A1_CKDN220053871-1A_HKCC7DSX5_L1_jgrg.TXT   # ExPEC
+abricate -db jgrg A8_CKDN220053878-1A_HK7KTDSX5_L1.fasta/assembly.fasta | tee A8_CKDN220053878-1A_HK7KTDSX5_L1_jgrg.TXT   # has yfcV 
 
 okay, seems to work as expected.  the poly-A test, change 1 A to C, result in 98% match.
 
@@ -76,6 +78,8 @@ it was a gene copied from ecoli_vf db that Abricate comes with, kind of serve as
 
 References
 ----------
+
+ecvf is the ecoli_vf db that abricate came with.  copied a sequence or two from there for testing/control check
 
 2016 Chapman : doi:10.1128/AEM.02885-05
 
