@@ -84,7 +84,7 @@ References
 
 yfcV: 
 >NP_311249.1 fimbrial-like adhesin protein [Escherichia coli O157:H7 str. Sakai]
-https://www.ncbi.nlm.nih.gov/protein/NP_311249.1?report=fasta 
-https://www.ncbi.nlm.nih.gov/gene/915681
-but that's protein sequence.  codon dengeracy maybe an issue, but used this reverse translation tool at https://www.biophp.org/minitools/protein_to_dna/demo.php
+https://www.ncbi.nlm.nih.gov/protein/NP_311249.1?report=fasta 187 AA.  (don't need this protein seq)
+NC_002695.2:c3182230-3181667~~~yfcV [organism=Escherichia coli O157:H7 str. Sakai] [GeneID=915681] [chromosome=]
+https://www.ncbi.nlm.nih.gov/gene/915681 - Download Gene Seq FASTA is DNA, 564 nt, include 3 nt for stop codon TA.
 
