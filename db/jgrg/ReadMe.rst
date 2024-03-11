@@ -5,7 +5,27 @@ mostly things we want to look for but not in abricate's vfdb
 
 eg
 - yfcV
-- kpsMII
+- kpsMII (tbd)
+
+
+Install and Use
+---------------
+
+git clone 
+
+Example usage
+-------------
+
+export PATH=$PATH:$HOME/tin-gh/abricate/bin/   # set to where you cloned/setup abricate
+
+abricate -db jgrg ex_ctrl_A1_KCC7_L1.fa 
+abricate -db jgrg ex_ctrl_*.fa           | tee jgrg_screen_test.OUT.TXT
+abricate -db jgrg A1_CKDN220053871-1A_HKCC7DSX5_L1.fasta/assembly.fasta | tee A1_CKDN220053871-1A_HKCC7DSX5_L1_jgrg.TXT   # ExPEC
+abricate -db jgrg A8_CKDN220053878-1A_HK7KTDSX5_L1.fasta/assembly.fasta | tee A8_CKDN220053878-1A_HK7KTDSX5_L1_jgrg.TXT   # has yfcV 
+
+
+dev notes
+---------
 
 db creation per https://github.com/tseemann/abricate?tab=readme-ov-file#making-your-own-database
 
@@ -37,13 +57,15 @@ CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 
 
 
-PLAN
-----
 
 
-eg_ctrl.fa # example/control file
-eg_ctrl_papAH.fa 
-eg_ctrl_yfcV.fa
+example/control files
+---------------------
+
+ex_ctrl_A1_KCC7_L1.fa     # sample sequence file with variuos manual constructs for testing
+eg_ctrl_yfcV.fa           # test for yfcV
+ex_ctrl_all_seq_concat.fa # as control, essentially concatenation of chunks in sequence file, sans header.  primers are not matched, probably cuz too short.
+eg_ctrl_papAH.fa     # TBD
 
 maybe treat as single sequence
 but some line has sequence that can work as control (eg ensure detecting kpsMII, papA, should have ctrl of everything we want to search for)
@@ -51,19 +73,6 @@ but some line has sequence that can work as control (eg ensure detecting kpsMII,
 potentially multiple eg_ctrl file if don't want multiple seq in that file.
 either numerically, or by gene name.
 
-
-Test
-----
-
-export PATH=$PATH:/home/tin/tin-gh/abricate/bin/
-abricate -db jgrg ex_ctrl_A1_KCC7_L1.fa | tee jgrg_screen.OUT
-abricate -db jgrg ex_ctrl_*.fa | tee jgrg_screen_test2.OUT
-abricate -db jgrg A1_CKDN220053871-1A_HKCC7DSX5_L1.fasta/assembly.fasta | tee A1_CKDN220053871-1A_HKCC7DSX5_L1_jgrg.TXT   # ExPEC
-abricate -db jgrg A8_CKDN220053878-1A_HK7KTDSX5_L1.fasta/assembly.fasta | tee A8_CKDN220053878-1A_HK7KTDSX5_L1_jgrg.TXT   # has yfcV 
-
-okay, seems to work as expected.  the poly-A test, change 1 A to C, result in 98% match.
-
-need seq for yfcV and kpsMII next
 
 
 Notes
@@ -74,6 +83,8 @@ the entry
 is for ycfz, NOT yfcV that ExPEC definition looks for.
 it was a gene copied from ecoli_vf db that Abricate comes with, kind of serve as control.
 
+
+jgrg branch created out of sn_note branch at commit 8cab923.  plan to use this new branch going forward. 2024.0310
 
 
 References
