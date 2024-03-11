@@ -11,7 +11,10 @@ eg
 Install and Use
 ---------------
 
-git clone 
+git clone https://github.com/tin6150/abricate.git
+git checkout jgrg 
+
+depencies, please see the original abricate setup for info.
 
 Example usage
 -------------
@@ -19,8 +22,11 @@ Example usage
 export PATH=$PATH:$HOME/tin-gh/abricate/bin/   # set to where you cloned/setup abricate
 
 abricate -db jgrg ex_ctrl_A1_KCC7_L1.fa 
+
 abricate -db jgrg ex_ctrl_*.fa           | tee jgrg_screen_test.OUT.TXT
+
 abricate -db jgrg A1_CKDN220053871-1A_HKCC7DSX5_L1.fasta/assembly.fasta | tee A1_CKDN220053871-1A_HKCC7DSX5_L1_jgrg.TXT   # ExPEC
+
 abricate -db jgrg A8_CKDN220053878-1A_HK7KTDSX5_L1.fasta/assembly.fasta | tee A8_CKDN220053878-1A_HK7KTDSX5_L1_jgrg.TXT   # has yfcV 
 
 
@@ -62,10 +68,11 @@ CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 example/control files
 ---------------------
 
-ex_ctrl_A1_KCC7_L1.fa     # sample sequence file with variuos manual constructs for testing
-eg_ctrl_yfcV.fa           # test for yfcV
-ex_ctrl_all_seq_concat.fa # as control, essentially concatenation of chunks in sequence file, sans header.  primers are not matched, probably cuz too short.
-eg_ctrl_papAH.fa     # TBD
+- ex_ctrl_A1_KCC7_L1.fa     # sample sequence file with variuos manual constructs for testing
+- eg_ctrl_yfcV.fa           # test for yfcV
+- ex_ctrl_all_seq_concat.fa # as control, essentially concatenation of chunks in sequence file, sans header.  primers are not matched, probably cuz too short.
+- eg_ctrl_papAH.fa          # TBD
+
 
 maybe treat as single sequence
 but some line has sequence that can work as control (eg ensure detecting kpsMII, papA, should have ctrl of everything we want to search for)
@@ -98,8 +105,8 @@ ecvf is the ecoli_vf db that abricate came with.  copied a sequence or two from 
 
 
 yfcV: 
->NP_311249.1 fimbrial-like adhesin protein [Escherichia coli O157:H7 str. Sakai]
+> NP_311249.1 fimbrial-like adhesin protein [Escherichia coli O157:H7 str. Sakai]
 https://www.ncbi.nlm.nih.gov/protein/NP_311249.1?report=fasta 187 AA.  (don't need this protein seq)
-NC_002695.2:c3182230-3181667~~~yfcV [organism=Escherichia coli O157:H7 str. Sakai] [GeneID=915681] [chromosome=]
+> NC_002695.2:c3182230-3181667~~~yfcV [organism=Escherichia coli O157:H7 str. Sakai] [GeneID=915681] [chromosome=]
 https://www.ncbi.nlm.nih.gov/gene/915681 - Download Gene Seq FASTA is DNA, 564 nt, include 3 nt for stop codon TA.
 
