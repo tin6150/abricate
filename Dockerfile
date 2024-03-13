@@ -7,7 +7,10 @@
 
 # branch specific settings:
 
-FROM ubuntu:22.04
+## FROM ubuntu:22.04   # dont know what the heck is wrong with ubuntu, no version seems to have working apt-get or apt
+FROM debian:12.5-slim 
+# FROM debian:12.5-slim   ## bookworm-slim
+
 
 MAINTAINER Tin (at) BERKELEY.edu
 ARG DEBIAN_FRONTEND=noninteractive
@@ -89,7 +92,6 @@ RUN echo ''  ;\
     echo ""
 
 
-
 # add some marker of how Docker was build.
 COPY Dockerfile* /opt/gitrepo/container/
 
@@ -122,13 +124,13 @@ ENV TEST_DOCKER_ENV_NEQ1 "Dockerfile ENV assignment as foo bar, no  use of =, bo
 #-- unset path to ensure it didn't make Rscript behave worse cuz somehow "test" got masked/lost
 
 
-#ENTRYPOINT [ "/bin/bash" ]
+ENTRYPOINT [ "/bin/bash" ]
 #ENTRYPOINT [ "/usr/bin/rstudio" ]
 #ENTRYPOINT [ "Rscript", "/opt/gitrepo/atlas/main.R" ]
 #ENTRYPOINT [ "Rscript", "/main.R" ]
 #ENTRYPOINT [ "R" ]
 #ENTRYPOINT [ "/usr/lib/R/bin/exec/R" ]
-ENTRYPOINT [ "/usr/bin/R" ]
+#ENTRYPOINT [ "/usr/bin/R" ]
 # full path to R likely key to have it work in Ubuntu 16.04 host
 # but if /usr/bin/R doesn't work, then Rscript dont, cuz the test -x it does somehow need this set.
 # if no defined ENTRYPOINT, default to bash inside the container
