@@ -45,8 +45,8 @@ docker pull ghcr.io/tin6150/abricate:jgrg
 docker pull ghcr.io/lbnl-science-it/atlas:v1.0.2
 
 
-dev notes
----------
+db dev notes
+------------
 
 db creation per https://github.com/tseemann/abricate?tab=readme-ov-file#making-your-own-database
 

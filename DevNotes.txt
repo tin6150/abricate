@@ -4,3 +4,20 @@ can this file be copied?  or need to see from github and use gui to trigger some
  or may need to be in main branch?
 
 .github/workflow/docker-publish.yml  
+
+
+
+branches
+--------
+
+tin6150-dockerizing 
+	trying to have just the github workflow action (docker-publish.yml) file here, 
+  + Dockerfile 
+  hopefully necessary changes are in "jgrg" branch, after around git log 4c4c9fe, bca8623
+
+jgrg
+  doing the work to create db with desired sequences
+  did git pull --rebase origin tin6150-dockerizing
+	back around git log 0746645
+  
+
