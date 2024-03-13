@@ -7,8 +7,9 @@
 
 # branch specific settings:
 
-## FROM ubuntu:22.04   # dont know what the heck is wrong with ubuntu, no version seems to have working apt-get or apt
-FROM debian:12.5-slim 
+FROM ubuntu:22.04   
+## FROM ubuntu:22.04   # dont know what the heck is wrong with ubuntu, no version seems to have working apt-get or apt.  apt tmp down?
+#FROM debian:12.5-slim 
 # FROM debian:12.5-slim   ## bookworm-slim
 
 
@@ -82,18 +83,28 @@ RUN echo ''  ;\
     apt-get -y --quiet install git git-all  ;\
     test -d /opt/gitrepo            || mkdir -p /opt/gitrepo             ;\
     test -d /opt/gitrepo/container  || mkdir -p /opt/gitrepo/container   ;\
-    cd      /opt/gitrepo/container  ;\
-    git clone https://github.com/tin6150/abricate.git                    ;\
-    cd abricate ;\
-    git checkout jgrg ;\
+    #cd      /opt/gitrepo/container  ;\
+    #git clone https://github.com/tin6150/abricate.git                    ;\
+    #cd abricate ;\
+    #git checkout jgrg ;\
     # git pull ;\
-    git log --oneline --graph --decorate | tee /opt/gitrepo/container/git.lol.OUT.TXT  ;\
+    #git log --oneline --graph --decorate | tee /opt/gitrepo/container/git.lol.OUT.TXT  ;\
     cd / ;\
     echo ""
 
-
 # add some marker of how Docker was build.
-COPY Dockerfile* /opt/gitrepo/container/
+#COPY Dockerfile* /opt/gitrepo/container/
+COPY .           /opt/gitrepo/container/
+
+RUN echo ''  ;\
+    echo '==================================================================' ;\
+    cd    /opt/gitrepo/container/   ;\
+    #git  checkout jgrg ;\
+    git   branch | tee /opt/gitrepo/container/git.branch.OUT.TXT  ;\
+    git   log --oneline --graph --decorate | tee /opt/gitrepo/container/git.lol.OUT.TXT  ;\
+    cd    /   ;\
+    echo  ""
+
 
 RUN  cd / \
   && touch _TOP_DIR_OF_CONTAINER_  \
@@ -125,16 +136,6 @@ ENV TEST_DOCKER_ENV_NEQ1 "Dockerfile ENV assignment as foo bar, no  use of =, bo
 
 
 ENTRYPOINT [ "/bin/bash" ]
-#ENTRYPOINT [ "/usr/bin/rstudio" ]
-#ENTRYPOINT [ "Rscript", "/opt/gitrepo/atlas/main.R" ]
-#ENTRYPOINT [ "Rscript", "/main.R" ]
-#ENTRYPOINT [ "R" ]
-#ENTRYPOINT [ "/usr/lib/R/bin/exec/R" ]
-#ENTRYPOINT [ "/usr/bin/R" ]
-# full path to R likely key to have it work in Ubuntu 16.04 host
-# but if /usr/bin/R doesn't work, then Rscript dont, cuz the test -x it does somehow need this set.
-# if no defined ENTRYPOINT, default to bash inside the container
-# careful not to cover /home/username (for this container)
 
 
 # vim: shiftwidth=4 tabstop=4 formatoptions-=cro nolist nu syntax=on
