@@ -7,6 +7,9 @@
 #FROM r-base:3.6.2
 #FROM tin6150/base4metabolic
 FROM rockylinux:9.3
+# To set ghcr to be public, so docker pull does not get unauthorized, see
+# https://www.willvelida.com/posts/pushing-container-images-to-github-container-registry/#making-our-image-publicly-accessible
+LABEL org.opencontainers.image.source="https://github.com/tin6150/abricate"
 MAINTAINER Tin (at) LBL.gov
 
 ARG TZ="America/Los_Angeles"
