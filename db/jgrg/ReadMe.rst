@@ -36,13 +36,21 @@ abricate -db jgrg A8_CKDN220053878-1A_HK7KTDSX5_L1.fasta/assembly.fasta | tee A8
 containerirzed Abricate + jgrg db
 ---------------------------------
 
+git tag -a jgrg.1 f6a53dc -m "ver .1 essentially just yfcV"
+git push -u origin jgrg.1
+
 singularity pull ... 
 singularity pull --name tin6150_perf_tools_latest.sif docker://ghcr.io/tin6150/perf_tools:master
+singularity pull --name abricate_jgrg.sif docker://ghcr.io/tin6150/abricate:jgrg
 
 docker pull ghcr.io/tin6150/perf_tools:master
 docker pull ghcr.io/tin6150/abricate:tin6150-dockerizing    # xx
 docker pull ghcr.io/tin6150/abricate:jgrg
+docker pull ghcr.io/tin6150/abricate:latest
 docker pull ghcr.io/lbnl-science-it/atlas:v1.0.2
+
+manual build
+docker build -t tin6150/abricate:jgrg -f Dockerfile . | tee Dockerfile.log                                 
 
 
 db dev notes
