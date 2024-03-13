@@ -7,6 +7,8 @@ name: docker-publish
 
 ## 2024.0312 commented out scheduled run, only need to run when changes get pushed.
 
+## this version looks good
+
 on:
   #schedule:
   #  - cron: '38 7 * * *'
