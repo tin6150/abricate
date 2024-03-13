@@ -55,6 +55,7 @@ then run abricate --setupdb
 
 
 
+
 sequence from?  NCBI?  primers listed in paper?
 
 trying with primers
