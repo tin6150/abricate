@@ -14,6 +14,7 @@ Installation
 .. code:: bash
 
 	git clone https://github.com/tin6150/abricate.git
+	cd abricate
 	git checkout jgrg 
 
 depencies, please see the original abricate setup for info https://github.com/tseemann/abricate?tab=readme-ov-file#source .
@@ -30,6 +31,18 @@ abricate -db jgrg ex_ctrl_*.fa           | tee jgrg_screen_test.OUT.TXT
 abricate -db jgrg A1_CKDN220053871-1A_HKCC7DSX5_L1.fasta/assembly.fasta | tee A1_CKDN220053871-1A_HKCC7DSX5_L1_jgrg.TXT   # ExPEC
 
 abricate -db jgrg A8_CKDN220053878-1A_HK7KTDSX5_L1.fasta/assembly.fasta | tee A8_CKDN220053878-1A_HK7KTDSX5_L1_jgrg.TXT   # has yfcV 
+
+
+containerirzed Abricate + jgrg db
+---------------------------------
+
+singularity pull ... 
+singularity pull --name tin6150_perf_tools_latest.sif docker://ghcr.io/tin6150/perf_tools:master
+
+docker pull ghcr.io/tin6150/perf_tools:master
+docker pull ghcr.io/tin6150/abricate:tin6150-dockerizing    # xx
+docker pull ghcr.io/tin6150/abricate:jgrg
+docker pull ghcr.io/lbnl-science-it/atlas:v1.0.2
 
 
 dev notes
