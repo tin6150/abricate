@@ -105,9 +105,11 @@ COPY .           /opt/gitrepo/container/
 RUN echo ''  ;\
     echo '==================================================================' ;\
     cd    /opt/gitrepo/container/   ;\
-    #git  checkout jgrg ;\
+    /opt/gitrepo/container/install_dependencies.sh  | tee /opt/gitrepo/container/install-dependencies.OUT.TXT  ;\
+    #git  checkout jgrg ;\   # the github workflow is doing branch specific build, so no need to do this checkout step
     git   branch | tee /opt/gitrepo/container/git.branch.OUT.TXT  ;\
     git   log --oneline --graph --decorate | tee /opt/gitrepo/container/git.lol.OUT.TXT  ;\
+    /opt/gitrepo/container/bin/abricate --setupdb  | tee /opt/gitrepo/container/abricate--setupdb.OUT.TXT  ;\
     cd    /   ;\
     echo  ""
 
@@ -141,7 +143,8 @@ ENV TEST_DOCKER_ENV_NEQ1 "Dockerfile ENV assignment as foo bar, no  use of =, bo
 #-- unset path to ensure it didn't make Rscript behave worse cuz somehow "test" got masked/lost
 
 
-ENTRYPOINT [ "/bin/bash" ]
+#ENTRYPOINT [ "/bin/bash" ]
+ENTRYPOINT [ "/opt/gitrepo/container/bin/abricate" ]
 
 
 # vim: shiftwidth=4 tabstop=4 formatoptions-=cro nolist nu syntax=on
