@@ -3,12 +3,21 @@
 ## install dependencies needed by abricate per
 ## https://github.com/tseemann/abricate?tab=readme-ov-file#installation
 
-sudo apt-get install bioperl ncbi-blast+ gzip unzip git \
+apt-get -y install bioperl ncbi-blast+ gzip unzip git \
   libjson-perl libtext-csv-perl libpath-tiny-perl liblwp-protocol-https-perl libwww-perl
 
-## git clone https://github.com/tseemann/abricate.git
-alias Abricate=/opt/gitrepo/container/bin/abricate
-Abricate/bin/abricate --check
-Abricate/bin/abricate --setupdb
-Abricate/bin/abricate ./abricate/test/assembly.fa
+cd /opt/gitrepo
+git clone https://github.com/tseemann/any2fasta.git
+cp -p /opt/gitrepo/any2fasta/any2fasta /usr/local/bin
+which any2fasta
 
+
+cd    /opt/gitrepo/container
+cp -p /opt/gitrepo/container/bin/abricate /usr/local/bin
+## git clone https://github.com/tseemann/abricate.git
+which abricate
+abricate --check
+abricate --setupdb
+abricate ./abricate/test/assembly.fa
+
+abricate --list

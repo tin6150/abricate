@@ -105,11 +105,11 @@ COPY .           /opt/gitrepo/container/
 RUN echo ''  ;\
     echo '==================================================================' ;\
     cd    /opt/gitrepo/container/   ;\
-    /opt/gitrepo/container/install_dependencies.sh  | tee /opt/gitrepo/container/install-dependencies.OUT.TXT  ;\
+    bash /opt/gitrepo/container/install_dependencies.sh 2>&1 | tee /opt/gitrepo/container/install-dependencies.OUT.TXT  ;\
     #git  checkout jgrg ;\   # the github workflow is doing branch specific build, so no need to do this checkout step
     git   branch | tee /opt/gitrepo/container/git.branch.OUT.TXT  ;\
     git   log --oneline --graph --decorate | tee /opt/gitrepo/container/git.lol.OUT.TXT  ;\
-    /opt/gitrepo/container/bin/abricate --setupdb  | tee /opt/gitrepo/container/abricate--setupdb.OUT.TXT  ;\
+    /opt/gitrepo/container/bin/abricate --setupdb 2>&1 | tee /opt/gitrepo/container/abricate--setupdb.OUT.TXT  ;\
     cd    /   ;\
     echo  ""
 
