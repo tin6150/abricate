@@ -21,3 +21,15 @@ jgrg
 	back around git log 0746645
   
 
+Security settings
+-----------------
+
+
+the ghcr.io unathorized has to do with the
+Package > Package Settings >
+https://github.com/users/tin6150/packages/container/abricate/settings
+
+needing to change the RED Danger Zone to public (it now default to private even when the repo itself is public)
+
+so, the seq_db repo will be abandoned, at least for now (might have other use for it in future).
+
