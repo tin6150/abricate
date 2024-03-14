@@ -13,7 +13,7 @@ which any2fasta
 
 
 cd    /opt/gitrepo/container
-cp -p /opt/gitrepo/container/bin/abricate /usr/local/bin
+ln -s /opt/gitrepo/container/bin/abricate /usr/local/bin
 ## git clone https://github.com/tseemann/abricate.git
 which abricate
 abricate --check
