@@ -18,6 +18,8 @@ ln -s /opt/gitrepo/container/bin/abricate /usr/local/bin
 which abricate
 abricate --check
 abricate --setupdb
-abricate ./abricate/test/assembly.fa
-
+abricate test/assembly.fa
+echo ""
+echo ""
+echo ""
 abricate --list
