@@ -130,3 +130,8 @@ https://www.ncbi.nlm.nih.gov/protein/NP_311249.1?report=fasta 187 AA.  (don't ne
 > NC_002695.2:c3182230-3181667~~~yfcV [organism=Escherichia coli O157:H7 str. Sakai] [GeneID=915681] [chromosome=]
 https://www.ncbi.nlm.nih.gov/gene/915681 - Download Gene Seq FASTA is DNA, 564 nt, include 3 nt for stop codon TA.
 
+
+
+kpsMT II primers -  Johnson 2000
+https://academic.oup.com/jid/article/181/1/261/893888
+

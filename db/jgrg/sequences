@@ -38,6 +38,10 @@ ATGAGTAAGTTTGTAAAAACAG
 CAGTATCAGCAATCGTTCTGTA
 >jgrg~~~kpsII-R~~~ACA99999~~2016 Chapman kpsMT K5 kpsII-R primer [testing stage]
 CATCCAGACGATAAGCATGAGCA
+>jgrg~~~kpsMT_II~~~kpsII_f~~2020 Johnson kpsMT II kpsII f primer [testing stage]
+gcgcatttgctgatactgttg
+>jgrg~~~kpsMT_II~~~kpsII_r~~2020 Johnson kpsMT II kpsII r primer [testing stage]
+catccagacgataagcatgagca
 >jgrg~~~sfa/focDE_1-F~~~ACA99999~~2016 Chapman sfa/focDE 1-F primer [testing stage]
 CTCCGGAGAACTGGGTGCATCTTAC 410 0.6 M
 >jgrg~~~sfa/focDE_2-R~~~ACA99999~~2016 Chapman sfa/focDE 2-R primer [testing stage]
