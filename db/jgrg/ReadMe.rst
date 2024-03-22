@@ -148,6 +148,7 @@ sequences_kpsMTII_soil_Brazil.fa
 so have about 3 versions (not 5)
 
 going to do this:
-cat sequences_kpsMTII_soil_Brazil.fa sequences_kpsMTII_cow_feces_Brazil.fa sequences_kpsMTII_human_vfg_Russia.fa >> sequences
+cat sequences_kpsMTII_soil_Brazil.fa sequences_kpsMTII_cow_feces_Brazil.fa sequences_kpsMTII_human_vfg_Russia.fa >> sequences   
+# sequences in git log 4d9652b is last version before this concat
 
 
