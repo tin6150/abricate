@@ -135,3 +135,19 @@ https://www.ncbi.nlm.nih.gov/gene/915681 - Download Gene Seq FASTA is DNA, 564 n
 kpsMT II primers -  Johnson 2000
 https://academic.oup.com/jid/article/181/1/261/893888
 
+
+ncbi search for kpsMTII (without space) got 5 records https://www.ncbi.nlm.nih.gov/nuccore/?term=kpsMTII
+saved as sequences_kpsMTII...fa
+but some of them are the same, hmmm... country match?
+
+# sequences are the same:
+vimdiff sequences_kpsMTII_human_esbl_Iran.fa sequences_kpsMTII_human_vfg_Russia.fa
+vimdiff sequences_kpsMTII_cow_feces_Brazil.fa sequences_kpsMTII_water_Brazil.fa 
+sequences_kpsMTII_soil_Brazil.fa
+
+so have about 3 versions (not 5)
+
+going to do this:
+cat sequences_kpsMTII_soil_Brazil.fa sequences_kpsMTII_cow_feces_Brazil.fa sequences_kpsMTII_human_vfg_Russia.fa >> sequences
+
+
