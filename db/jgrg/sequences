@@ -33,27 +33,27 @@ CAGAAAATCGTAAACGATACGGCGACCAACAAAGGCAAAGCGAAGCAGACGCTGGACTTTAAAGCCTGGC
 TGGTGGGCGCTGCTGATGCGCCAGATTTAGGTAATTTTGAAGCCAACACGACCTTCCAGATTACTTATCT
 CTAA
 >jgrg~~~yfcV_primer~~~NC_002695.2:c3182230-3181667~~~yfcV [organism=Escherichia coli O157:H7 str. Sakai] [GeneID=915681] [chromosome=] primer test tmp
-ATGAGTAAGTTTGTAAAAACAG
+atgagtaagtttgtaaaaacag
 >jgrg~~~kpsMT_K5~~~ACA99999~~2016 Chapman K5-F primer [testing stage]
-CAGTATCAGCAATCGTTCTGTA
+cagtatcagcaatcgttctgta
 >jgrg~~~kpsII-R~~~ACA99999~~2016 Chapman kpsMT K5 kpsII-R primer [testing stage]
-CATCCAGACGATAAGCATGAGCA
+catccagacgataagcatgagca
 >jgrg~~~kpsMT_II~~~kpsII_f~~2020 Johnson kpsMT II kpsII f primer [testing stage]
 gcgcatttgctgatactgttg
 >jgrg~~~kpsMT_II~~~kpsII_r~~2020 Johnson kpsMT II kpsII r primer [testing stage]
 catccagacgataagcatgagca
 >jgrg~~~sfa/focDE_1-F~~~ACA99999~~2016 Chapman sfa/focDE 1-F primer [testing stage]
-CTCCGGAGAACTGGGTGCATCTTAC 410 0.6 M
+ctccggagaactgggtgcatcttac
 >jgrg~~~sfa/focDE_2-R~~~ACA99999~~2016 Chapman sfa/focDE 2-R primer [testing stage]
-CGGAGGAGTAATTACAAACCTGGCA
+cggaggagtaattacaaacctggca
 >jgrg~~~yfcV_primer~~~ACA99999~~2012 Spurbeck yfcV primer [testing stage]
-ACATGGAGACCACGTTCACC
+acatggagaccacgttcacc
 >jgrg~~~vat_primer~~~ACA99999~~2012 Spurbeck vat primer [testing stage]
-TCAGGACACGTTCAGGCATTCAGT	
+tcaggacacgttcaggcattcagt	
 >jgrg~~~fyuA_primer~~~ACA99999~~2012 Spurbeck fyuA primer [testing stage]
-GTAAACAATCTTCCCGCTCGGCAT
+gtaaacaatcttcccgctcggcat
 >jgrg~~~chuA_primer~~~ACA99999~~2012 Spurbeck chuA primer [testing stage]
-CTGAAACCATGACCGTTACG	
+ctgaaaccatgaccgttacg	
 >jgrg~~~ycfz~~~SPG000092 putative factor [from ecoli_vf]
 ATGAAAAAAATCATGATACTGCTCAGTTTACTGATGTTCCTGCCTCTGACGGCAATCAGT
 AAGCCCTTAATTCCAATAATGAAGACTCTTTTTACAGATGTTACCGGTACTGTACCAGAT
@@ -69,17 +69,17 @@ AACTACACAACGCGCCTTTATTATGCGTTAAAATTTGCAGTGGCGATGGCTGTTGCCAAT
 ATGGGGTATCAGGCTTTATGTTTGTATATCGATAACAGCTTTGCGATTACCAGAATATCG
 CCACTCTGGGCAGGGCTGATTGGTGTCTGTACGTTTATTGCCGCGTTACTATGGACGAGT
 AAACGGTAA
->jgrg~~~kpsMII~~~MZ359793~~soil_Brazil_partialCds_www.ncbi.nlm.nih.gov/nuccore/MZ359793.1
+>jgrg~~~kpsMTII~~~MZ359793~~soil_Brazil_partialCds_www.ncbi.nlm.nih.gov/nuccore/MZ359793.1
 ggttacgtta tgcaccgcac tatgccagac atctcgttcc cggtgttttt acttaatggc
 ctgattccct tttttatctt tagtagtatt agcaaacgtt ctattggtgc tattgaagcg
 aaccaggggc tgtttaatta tcgaccagta aaacccatcg atacgatcat tgcacgtgca
 ctgcttgaga cactgattta cgttgctgtt tat
->jgrg~~~kpsMII~~~OP081601~~cow_feces_Brazil_partialCds_www.ncbi.nlm.nih.gov/nuccore/OP081601.1
+>jgrg~~~kpsMTII~~~OP081601~~cow_feces_Brazil_partialCds_www.ncbi.nlm.nih.gov/nuccore/OP081601.1
 gttatgcacc gcactatgcc agacatctcg ttcccggtgt ttttacttaa tggcctgatt
 ccctttttta tctttagtag tattagcaaa cgttctattg gtgctattga agcgaaccag
 gggctgttta attatcgacc agtaaaaccc atcgatacga tcattgcacg tgcactgctt
 gagacactga tttacgttgc tgtt
->jgrg~~~kpsMII~~~MF495349~~Homo_sapiens_urine_Russia_partialCds_www.ncbi.nlm.nih.gov/nuccore/MF495349.1
+>jgrg~~~kpsMTII~~~MF495349~~Homo_sapiens_urine_Russia_partialCds_www.ncbi.nlm.nih.gov/nuccore/MF495349.1
 gcgcatttgc tgatactgtt gggaattttg ggttacgtta tgcaccgcac tatgccagac
 atctcgttcc cggtgttttt acttaatggc ctgattccct tttttatctt tagtagtatt
 agcaaacgtt ctattggtgc tattgaagcg aaccagggac tgtttaatta tcgaccagta
