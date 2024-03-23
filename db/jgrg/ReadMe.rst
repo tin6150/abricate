@@ -71,6 +71,18 @@ file:///G:/Shared%20drives/Tin_Ho_gDrv_BL_shareDrv/mph_hw/mph_prj_bioinfo/ExPEC/
 first record is first record of vfdb/sequence (for now)
 
 
+sanity check
+------------
+
+# kind of negative control
+# to see if the kpsMTII seq I got matches anything in the stock vfdb .  eg kpsM?  or if it match some other gene, then it would be red flag
+# for kpsMTII, did not match anything from vfdb, ecoli_vf, card, resfinder
+
+abricate -db vfdb ***fa
+
+
+
+
 
 sequence db template
 --------------------
