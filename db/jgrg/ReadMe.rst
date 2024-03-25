@@ -157,7 +157,7 @@ saved as sequences_kpsMTII...fa
 but some of them are the same, hmmm... country match?
 
 # sequences are the same:
-vimdiff sequences_kpsMTII_human_esbl_Iran.fa sequences_kpsMTII_human_vfg_Russia.fa  # this seq match primer 2020 Johnson kpsMT II kpsII f primer "gcgcatttgc tgatactgtt g"
+vimdiff sequences_kpsMTII_human_esbl_Iran.fa sequences_kpsMTII_human_vfg_Russia.fa  # this seq match primer 2020 Johnson kpsMT II kpsII f primer "gcgcatttgc tgatactgtt g"  MF495349 
 vimdiff sequences_kpsMTII_cow_feces_Brazil.fa sequences_kpsMTII_water_Brazil.fa 
 sequences_kpsMTII_soil_Brazil.fa
 
@@ -166,5 +166,15 @@ so have about 3 versions (not 5)
 going to do this:
 cat sequences_kpsMTII_soil_Brazil.fa sequences_kpsMTII_cow_feces_Brazil.fa sequences_kpsMTII_human_vfg_Russia.fa >> sequences   
 # sequences in git log 4d9652b is last version before this concat
+
+
+*sigh*
+
+
+sequences_kpsMTII_human_vfg_Russia.fa   MF495349 
+is exact subset of vfdb kpsM
+>vfdb~~~kpsM~~~AAA24046 (kpsM) KpsM [K1 capsule (VF0239)] [Escherichia coli O18:K1:H7 str. RS218]
+
+so guatemala result is less specific than vfdb kpsM, final result they co-variate.
 
 
