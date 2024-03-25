@@ -78,8 +78,12 @@ sanity check
 # to see if the kpsMTII seq I got matches anything in the stock vfdb .  eg kpsM?  or if it match some other gene, then it would be red flag
 # for kpsMTII, did not match anything from vfdb, ecoli_vf, card, resfinder
 
-abricate -db vfdb ***fa
+abricate -db vfdb seq*fa
 
+db was repeated for all other db included with abricate.
+These sequences were tested, so non of the seq used for this custom db had match in any other db abricate shipped with.
+
+sequences_kpsMTII_cow_feces_Brazil.fa  sequences_kpsMTII_human_esbl_Iran.fa  sequences_kpsMTII_human_vfg_Russia.fa  sequences_kpsMTII_soil_Brazil.fa  sequences_kpsMTII_water_Brazil.fa  sequences_yfcV.fa
 
 
 
