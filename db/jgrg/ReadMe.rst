@@ -22,7 +22,9 @@ depencies, please see the original abricate setup for info https://github.com/ts
 Example usage
 -------------
 
-export PATH=$PATH:$HOME/tin-gh/abricate/bin/   # set to where you cloned/setup abricate
+export PATH=$PATH:$HOME/tin-gh/abricate/bin/         # set to where you cloned/setup abricate (Zorin)
+export PATH=$PATH:$HOME/tin-git-Ctin/abricate/bin/   # set to where you cloned/setup abricate (LL486, missing perl libs)
+
 
 abricate -db jgrg ex_ctrl_A1_KCC7_L1.fa 
 
