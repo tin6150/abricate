@@ -1,3 +1,25 @@
+
+amnt is the new db.
+their is so much more comprehensive, not likely going to need jgrg db
+
+credit:
+
+Tetzschner AMM, Johnson JR, Johnson BD, Lund O, Scheutz F. In silico genotyping of Escherichia coli isolates for extraintestinal virulence genes by use of whole-genome sequencing data. J Clin Microbiol 2020;58:e01269-20. doi: 10.1128/JCM.01269-20. PMID: 32669379
+
+
+https://bitbucket.org/genomicepidemiology/virulencefinder_db/
+
+
+here is just a fork/local cache to make processing and containerization easier.
+
+
+
+
+
+
+~~~~~
+
+
 (sn_note branch)
 fork of  tseemann/abricate
 

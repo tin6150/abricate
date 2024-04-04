@@ -24,3 +24,5 @@ nytprof.out
 /db/*/make*
 /db/abricate/
 /test-local
+## tin... ponder... if keep copy, then need very clear acknoledgement >>
+db/amnt/sequences

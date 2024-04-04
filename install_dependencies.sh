@@ -23,3 +23,14 @@ echo ""
 echo ""
 echo ""
 abricate --list
+
+
+# add amnt db, see sript for detail and credit
+
+cd    /opt/gitrepo/container
+bash amnt_db_setup.sh 2>&1 | tee amnt_db_setup.OUT.TXT
+echo ""
+echo ""
+echo ""
+abricate --list
+
