@@ -6,6 +6,8 @@ mostly things we want to look for but not in abricate's vfdb
 eg
 - yfcV
 - kpsMII (tbd)
+* see db/amnt, JJ and co send me their paper/db about supplement genes, much more comprehensive for ExPEC and UPEC alleles.
+  yfvV have some agreement, but also disagreement from their alleles.  
 
 
 Installation
@@ -147,6 +149,11 @@ yfcV:
 https://www.ncbi.nlm.nih.gov/protein/NP_311249.1?report=fasta 187 AA.  (don't need this protein seq)
 > NC_002695.2:c3182230-3181667~~~yfcV [organism=Escherichia coli O157:H7 str. Sakai] [GeneID=915681] [chromosome=]
 https://www.ncbi.nlm.nih.gov/gene/915681 - Download Gene Seq FASTA is DNA, 564 nt, include 3 nt for stop codon TA.
+
+**NOTE** yfcV - check against:
+2024.0404 update: "amnt db" 
+Tetzschner AMM, Johnson JR, Johnson BD, Lund O, Scheutz F. In silico genotyping of Escherichia coli isolates for extraintestinal virulence genes by use of whole-genome sequencing data. J Clin Microbiol 2020;58:e01269-20. doi: 10.1128/JCM.01269-20. PMID: 32669379
+
 
 
 
