@@ -22,7 +22,7 @@ jgrg
 
 tags
 	git tag -a jgrg.1.1 df670cd  -m "jgrg v 0.1.1 with essentially just yfcV from NCBI" 
-	git tag -a jgrg.2            -m "jgrg v 0.2   with yfcV alleles from AMNT https://bitbucket.org/genomicepidemiology/virulencefinder_db"  # tbd
+	git tag -a jgrg.2            -m "jgrg v 0.2   with yfcV alleles from AMNT https://bitbucket.org/genomicepidemiology/virulencefinder_db"  
   
 
 Security settings
