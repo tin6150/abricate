@@ -1,0 +1,10 @@
+
+these are yfcV:* alleles sequence from :
+
+wget https://bitbucket.org/genomicepidemiology/virulencefinder_db/raw/012404acf9d2f53ef34c881d78997b8053c9f9f0/virulence_ecoli.fsa
+
+
+will
+cat sequences_yfcV_amnt.fa >> sequences
+then trigger abricate db build
+

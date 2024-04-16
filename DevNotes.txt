@@ -21,7 +21,8 @@ jgrg
 	back around git log 0746645
 
 tags
-	git tag -a jgrg.1 -m "jgrg v 0.1 with essentially just yfcV from NCBI" 
+	git tag -a jgrg.1.1 df670cd  -m "jgrg v 0.1.1 with essentially just yfcV from NCBI" 
+	git tag -a jgrg.2            -m "jgrg v 0.2   with yfcV alleles from AMNT https://bitbucket.org/genomicepidemiology/virulencefinder_db"  # tbd
   
 
 Security settings
