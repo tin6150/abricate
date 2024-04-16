@@ -19,6 +19,9 @@ jgrg
   doing the work to create db with desired sequences
   did git pull --rebase origin tin6150-dockerizing
 	back around git log 0746645
+
+tags
+	git tag -a jgrg.1 -m "jgrg v 0.1 with essentially just yfcV from NCBI" 
   
 
 Security settings
