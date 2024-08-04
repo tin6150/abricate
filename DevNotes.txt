@@ -7,6 +7,7 @@ can this file be copied?  or need to see from github and use gui to trigger some
 
 
 
+
 branches
 --------
 
@@ -37,3 +38,12 @@ needing to change the RED Danger Zone to public (it now default to private even 
 
 so, the seq_db repo will be abandoned, at least for now (might have other use for it in future).
 
+
+
+wsl
+---
+
+apptainer pull --name abricate.SIF docker://ghcr.io/tin6150/abricate:jgrg
+
+**^ tin Weasel ~/tin-git-Ctin/abricate ^**>  /home/tin/tin-git-Ctin/abricate/abricate.SIF -v
+abricate 1.0.1

@@ -1,0 +1,8 @@
+
+was going to create a custom abricate DB for Saba for the kpsMII seq of her interest.
+but they were subset of amnt
+so just ran that, and have her filter out ARG that aren't of interest to her.
+
+summary: no real need for this, never created a "saba db".
+
+
